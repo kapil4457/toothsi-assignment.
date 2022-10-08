@@ -58,6 +58,10 @@ const Cart = () => {
                               return it.name !== item.name;
                             });
                             setItems(filtered);
+                            localStorage.setItem(
+                              "CartItems",
+                              JSON.stringify(filtered)
+                            );
                           } else {
                             item.quantity = item.quantity - 1;
                           }

@@ -45,12 +45,20 @@ const Home = () => {
   const push = () => {
     if (localStorage.getItem("CartItems") !== null) {
       var tempArr = JSON.parse(localStorage.getItem("CartItems"));
-      itemsAddedToCart.forEach((item) => {
-        tempArr.push(item);
-        console.log(tempArr);
-      });
 
-      localStorage.setItem("CartItems", JSON.stringify(tempArr));
+      itemsAddedToCart.forEach((item) => {
+        if (tempArr.includes(item) == false) {
+          tempArr.push(item);
+          console.log(tempArr);
+        }
+      });
+      const key = "key";
+      const arrayUniqueByKey = [
+        ...new Map(tempArr.map((item) => [item[key], item])).values(),
+      ];
+      console.log(arrayUniqueByKey);
+
+      localStorage.setItem("CartItems", JSON.stringify(arrayUniqueByKey));
     } else {
       localStorage.setItem("CartItems", JSON.stringify(itemsAddedToCart));
     }
@@ -213,6 +221,7 @@ const Home = () => {
                             price: i.price,
                             size: i.size,
                             image: i.image,
+                            key: i.key,
                             quantity:
                               document.getElementById(`quantity${idx}`).value >
                               0
