@@ -1,5 +1,5 @@
 # Deployed Link
-Live : https://633cfd92d3d020265270fa34--cosmic-souffle-f0fe4d.netlify.app/
+Live : https://toothsi-assignment.vercel.app/
 
 
 # Getting Started with Create React App
