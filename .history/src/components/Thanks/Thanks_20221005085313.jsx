@@ -1,0 +1,17 @@
+import React from "react";
+import "./Thanks.css";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+const Thanks = () => {
+  return (
+    <div className="main-thanks-page">
+      <div>
+        <CheckCircleOutlineIcon />
+        <h2>Thank You For Shoppig with Us</h2>
+      </div>
+      <h3>You will receive order updates via email</h3>
+      <button>Continue Shopping</button>
+    </div>
+  );
+};
+
+export default Thanks;

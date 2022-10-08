@@ -1,0 +1,32 @@
+.cart-table{
+    width:70%;
+}
+tr{
+    height:4rem;
+}
+td > img{
+    height:100px;
+
+}
+.center {
+    width:100%;
+   padding-left:2.5rem;
+}
+.name{
+    display:flex;
+    align-items:center;
+}
+
+.valChange{
+    display:flex;
+    gap:1rem;
+}
+
+.change{
+    font-size:1.3rem;
+    background-color: transparent;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    width:2rem;
+}

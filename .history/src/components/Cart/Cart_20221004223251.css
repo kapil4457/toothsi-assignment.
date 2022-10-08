@@ -1,0 +1,20 @@
+table{
+    width:70%;
+}
+td > img{
+    height:100px;
+
+}
+.center {
+    width:100%;
+   padding-left:2.5rem;
+}
+.name{
+    display:flex;
+    align-items:center;
+}
+
+.valChange{
+    display:flex;
+    gap:1rem;
+}

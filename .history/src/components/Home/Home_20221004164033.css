@@ -1,0 +1,18 @@
+.filter{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:7rem;
+    border:1px solid black;
+}
+
+.left-filters{
+    display: flex;
+    gap:1rem;
+}
+
+.category , .size{
+    width:3rem;
+}
+
+

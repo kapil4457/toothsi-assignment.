@@ -1,0 +1,15 @@
+.main-thanks-page{
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-thanks-page > h2{
+    font-size:5rem;
+}
+.main-thanks-page >h2 >svg{
+    font-size:5rem;
+}
